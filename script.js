@@ -15,7 +15,7 @@ function generateTarget() {
 // returns true if user wins
 function compareGuesses(userGuess, computerGuess, secretTarget) {
     let userAway = secretTarget - userGuess;
-    const computerAway = secretTarget - computerGuess;
+    let computerAway = secretTarget - computerGuess;
     if (userAway < 0) {
         userAway = userAway * -1;
     }
